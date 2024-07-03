@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <img src="watch-1.PNG" alt="watch-img" class="main-img" id="main-img">
+
+    <div class="product-img-container">
+        <img src="watch-1.PNG" alt="watch-img" class="watch-img" onclick="changeimg(1)">
+        <img src="watch-2.PNG" alt="watch-img" class="watch-img" onclick="changeimg(2)">
+        <img src="watch-3.PNG" alt="watch-img" class="watch-img" onclick="changeimg(3)">
+        <img src="watch-4.PNG" alt="watch-img" class="watch-img" onclick="changeimg(4)">
+        <img src="watch-5.PNG" alt="watch-img" class="watch-img" onclick="changeimg(5)">
+    </div>
+
+    <script>
+        function changeimg(num){
+            const img = document.getElementById("main-img")
+
+            if(num==1){
+                img.src = "watch-1.PNG"
+            }
+            else if (num==2){
+                img.src = "watch-2.PNG"
+            }
+            else if (num==3){
+                img.src = "watch-3.png"
+            }
+            else if (num==4){
+                img.src = "watch-4.png"
+            }
+            else{
+                img.src = "watch-5.png"
+            }
+        }
+    </script>
+</body>
+</html>
